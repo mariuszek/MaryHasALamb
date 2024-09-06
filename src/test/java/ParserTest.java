@@ -14,6 +14,7 @@ public class ParserTest {
     List<String> inputs;
     Parser parser;
 
+
     @Before
     public void setup(){
         parser = new Parser();
