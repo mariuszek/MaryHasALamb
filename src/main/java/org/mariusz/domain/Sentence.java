@@ -1,7 +1,7 @@
 package org.mariusz.domain;
 
+import java.util.Objects;
 import java.util.TreeSet;
-import java.util.regex.Pattern;
 
 public class Sentence {
 
@@ -27,5 +27,15 @@ public class Sentence {
         return words.stream().toList().toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Sentence sentence)) return false;
+        return Objects.equals(words, sentence.words);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(words);
+    }
 }

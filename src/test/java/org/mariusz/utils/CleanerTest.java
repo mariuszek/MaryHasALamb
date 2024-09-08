@@ -3,8 +3,6 @@ package org.mariusz.utils;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.logging.Logger;
-
 import static org.junit.Assert.assertEquals;
 
 
