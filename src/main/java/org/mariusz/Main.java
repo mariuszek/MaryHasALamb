@@ -6,12 +6,10 @@ import org.mariusz.utils.output.CSVOutputWriter;
 import org.mariusz.utils.output.XMLOutputWriter;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
-import java.util.logging.Logger;
 
 /*
 Converts the plain text with statements into XML or CVS output.
@@ -28,8 +26,6 @@ Converts the plain text with statements into XML or CVS output.
                               Default Std out is used.
  */
 public class Main {
-    Logger logger = Logger.getLogger(Main.class.getName());
-
 
     public static void main(String[] args) throws MaryHasALambException {
         List<String> arguments = Arrays.stream(args).toList();
@@ -113,16 +109,16 @@ public class Main {
                 Converts the plain text with statements into XML or CVS output.
 
                 Usage: [options] [args...]
-                
+               \s
                 where options include:
                     -xml XML type of output will be produced Default -xml option.
                     -csv CSV type of output will be produced.
                     -f <file> input file that will be used to produce output. File must exist. Default Std in is used
                         Example: -f ./src/test/resources/small.in
-                        
-                    -o <file> output file that will be used. The output file will be erased if exists without a warning. 
+                       \s
+                    -o <file> output file that will be used. The output file will be erased if exists without a warning.\s
                               Default Std out is used.
-                """);
+               \s""");
 
     }
 

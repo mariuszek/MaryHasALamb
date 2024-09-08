@@ -6,14 +6,11 @@ import org.mariusz.utils.output.CSVOutputWriter;
 import org.mariusz.utils.output.XMLOutputWriter;
 
 import java.io.*;
-import java.util.logging.Logger;
 
 import static org.junit.Assert.*;
 
 
 public class ParserTest {
-
-    Logger logger = Logger.getLogger(ParserTest.class.getName());
 
     Parser xmlParser, csvParser;
 
@@ -44,7 +41,6 @@ public class ParserTest {
     @Test
     public void testNoneUnicodeXmlSentece() throws IOException {
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(outStream));
         xmlParser.parse(new BufferedReader(new StringReader(inputs[0])), new PrintStream(outStream));
         assertEquals(outputs[0],outStream.toString());
     }
@@ -52,7 +48,6 @@ public class ParserTest {
     @Test
     public void testMarySenteceToXml() throws IOException {
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(outStream));
         xmlParser.parse(new BufferedReader(new StringReader(inputs[1])), new PrintStream(outStream));
 
         assertEquals(outputs[1],outStream.toString());

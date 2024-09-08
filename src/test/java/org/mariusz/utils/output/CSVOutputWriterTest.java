@@ -5,17 +5,15 @@ import org.junit.Test;
 import org.mariusz.domain.Sentence;
 
 import java.util.TreeSet;
-import java.util.logging.Logger;
 
 import static org.junit.Assert.assertEquals;
 
 public class CSVOutputWriterTest {
     Sentence sentence;
 
-    Logger logger = Logger.getLogger(XMLOutputWriterTest.class.getName());
     @Before
     public void setup(){
-        TreeSet<String> set = new TreeSet<String>();
+        TreeSet<String> set = new TreeSet<>();
         set.add("test");
         set.add("basic");
         set.add("a");

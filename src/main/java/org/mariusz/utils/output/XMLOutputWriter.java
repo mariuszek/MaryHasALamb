@@ -2,12 +2,6 @@ package org.mariusz.utils.output;
 
 import org.mariusz.domain.Sentence;
 
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerFactory;
-import java.io.BufferedWriter;
-import java.io.OutputStream;
-
 public class XMLOutputWriter extends OutputWriter{
 
     private final static String metaHeader = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";

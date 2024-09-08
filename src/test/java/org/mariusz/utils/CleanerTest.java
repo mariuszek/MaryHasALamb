@@ -10,8 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 public class CleanerTest {
 
-    Logger logger = Logger.getLogger(CleanerTest.class.getName());
-
     @Before
     public void setup(){
     }

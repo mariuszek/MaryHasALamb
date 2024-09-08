@@ -6,10 +6,9 @@ import java.util.regex.Pattern;
 public class Sentence {
 
     private TreeSet<String> words;
-    Pattern cleanRegex = Pattern.compile("");
 
     public Sentence() {
-        this.words = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
+        this.words = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
     }
 
     public TreeSet<String> getWords() {return words;}

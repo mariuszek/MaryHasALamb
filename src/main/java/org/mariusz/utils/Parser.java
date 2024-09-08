@@ -9,7 +9,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.*;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /*
@@ -29,7 +28,6 @@ public class Parser {
         output = outputWriter;
     }
 
-    
     /*
         parse method use the lines from any BufferedReader extracts Sentences and put them to 
         the output Print writer in the same loop cycle to safe memory utilization. All the words/sentences while used
